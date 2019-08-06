@@ -1,16 +1,11 @@
-all:	build
+all:	proto build
 
 build:
-	go build
+	go build ./...
+	go build cmd/client/client.go
+	go build cmd/service/service.go
 
 proto:
-    protoc --go_out=plugins=rrpc:./hello_service ./service.proto
+	protoc --go_out=plugins=rrpc:./ ./service.proto
 
-test:
-	go test -v ./...
 
-clean:
-	go clean ./...
-
-nuke:
-	go clean -i ./...
