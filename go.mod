@@ -12,7 +12,3 @@ require (
 	github.com/rsocket/rsocket-rpc-go v0.0.1
 	github.com/stretchr/testify v1.3.0
 )
-
-replace github.com/rsocket/rsocket-rpc-go => ../rsocket-rpc-go
-
-replace github.com/netifi/netifi-go => ../netifi-go

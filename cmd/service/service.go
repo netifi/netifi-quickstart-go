@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/netifi/netifi-go"
 	service "github.com/netifi/netifi-go-quickstart"
+	"log"
 )
 
 const accessKey = 9007199254740991
@@ -20,6 +21,9 @@ func (helloService) SayHello(c context.Context, s *service.HelloRequest, b []byt
 		close(r)
 		close(e)
 	}()
+
+	log.Println("received a message -> ", s.Name)
+
 	response := &service.HelloResponse{
 		Message: "Hello, " + s.Name,
 	}
