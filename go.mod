@@ -1,4 +1,4 @@
-module github.com/netifi/netifi-go-quickstart
+module github.com/netifi/netifi-quickstart-go
 
 go 1.12
 

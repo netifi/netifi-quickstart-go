@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"github.com/netifi/netifi-go"
-	service "github.com/netifi/netifi-go-quickstart"
+	service "github.com/netifi/netifi-quickstart-go"
 	"log"
 )
 

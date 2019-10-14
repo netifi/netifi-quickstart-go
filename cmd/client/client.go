@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/netifi/netifi-go"
-	service "github.com/netifi/netifi-go-quickstart"
+	service "github.com/netifi/netifi-quickstart-go"
 	"github.com/netifi/netifi-go/tags"
 )
 

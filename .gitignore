@@ -24,3 +24,6 @@ suppressions/
 /protoc-gen-go/protoc-gen-go
 
 .idea
+
+service
+client
